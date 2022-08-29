@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Adapted from Acquia Coding Standards default ruleset. -->
+<!-- @see https://github.com/acquia/coding-standards-php/blob/develop/example/phpcs.xml.dist -->
+
+<!-- https://github.com/squizlabs/PHP_CodeSniffer/wiki/Annotated-Ruleset -->
+<ruleset name="PHPCS">
+
+  <description>PHP CodeSniffer configuration.</description>
+
+  <!-- Set extensions to scan (taken from Coder 8.3.6). -->
+  <!-- @see https://git.drupalcode.org/project/coder/blob/8.3.6/coder_sniffer/Drupal/ruleset.xml#L8 -->
+  <arg name="extensions" value="php,module,inc,install,test,profile,theme,info,txt,md"/>
+
+  <arg name="colors"/>
+  <arg name="cache" value=".phpcs-cache"/>
+  <arg name="parallel" value="10"/>
+
+  <file>web/modules/drupalcode</file>
+
+  <exclude-pattern>*/behat</exclude-pattern>
+  <exclude-pattern>*/node_modules</exclude-pattern>
+  <exclude-pattern>*/vendor</exclude-pattern>
+
+  <rule ref="AcquiaDrupalStrict"/>
+
+  <!-- @see https://github.com/slevomat/coding-standard#slevomatcodingstandardtypehintsreturntypehint -->
+  <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHint">
+    <exclude name="SlevomatCodingStandard.TypeHints.ReturnTypeHint.MissingTraversableTypeHintSpecification"/>
+  </rule>
+
+  <!-- @see https://github.com/slevomat/coding-standard#slevomatcodingstandardtypehintsuselessconstanttypehint -->
+  <rule ref="SlevomatCodingStandard.TypeHints.UselessConstantTypeHint"/>
+
+  <!-- @see https://github.com/slevomat/coding-standard#slevomatcodingstandardcontrolstructuresdisallowempty -->
+  <rule ref="SlevomatCodingStandard.ControlStructures.DisallowEmpty"/>
+
+  <!-- @see https://github.com/slevomat/coding-standard#slevomatcodingstandardfunctionsstrictcall -->
+  <rule ref="SlevomatCodingStandard.Functions.StrictCall"/>
+
+  <!-- @see https://github.com/slevomat/coding-standard#slevomatcodingstandardoperatorsdisallowequaloperators -->
+  <rule ref="SlevomatCodingStandard.Operators.DisallowEqualOperators"/>
+
+  <!-- @see https://github.com/slevomat/coding-standard#slevomatcodingstandardoperatorsrequirecombinedassignmentoperator -->
+  <rule ref="SlevomatCodingStandard.Operators.RequireCombinedAssignmentOperator"/>
+
+  <!-- @see https://github.com/slevomat/coding-standard#slevomatcodingstandardvariablesdisallowsuperglobalvariable -->
+  <rule ref="SlevomatCodingStandard.Variables.DisallowSuperGlobalVariable">
+    <exclude-pattern>*</exclude-pattern>
+  </rule>
+
+</ruleset>
