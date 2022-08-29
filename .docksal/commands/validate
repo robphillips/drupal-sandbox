@@ -4,4 +4,4 @@
 ##
 ## Usage: fin validate
 
-fin blt validate:phpcs
+fin blt validate:phpcs; fin yarn lint; fin yarn spellcheck

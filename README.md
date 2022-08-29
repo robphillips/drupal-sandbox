@@ -2,6 +2,12 @@
 
 Provides a bare bones Drupal sandbox with Acquia BLT+PHPCS and additional code tools installed.
 
+## Getting Started
+
+```shell
+git clone git@github.com:robphillips/drupal-sandbox.git 9.x
+```
+
 ## Drupal Code Repository
 
 Need to work on an issue or new feature for a Drupal Code hosted project? Use this shortcut to clone the repository
