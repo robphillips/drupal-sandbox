@@ -24,6 +24,9 @@
 
   <rule ref="AcquiaDrupalStrict"/>
 
+  <!-- @see https://github.com/squizlabs/PHP_CodeSniffer/issues/2197 -->
+  <rule ref="phpcs-config-override.xml"/>
+
   <!-- @see https://github.com/slevomat/coding-standard#slevomatcodingstandardtypehintsreturntypehint -->
   <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHint">
     <exclude name="SlevomatCodingStandard.TypeHints.ReturnTypeHint.MissingTraversableTypeHintSpecification"/>

@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+## Run code validation.
+##
+## Usage: fin validate
+
+fin blt validate:phpcs

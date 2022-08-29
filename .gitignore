@@ -1,7 +1,7 @@
 composer.lock
 vendor
 node_modules
-blt
+/blt
 /web
 /.editorconfig
 /.gitattributes

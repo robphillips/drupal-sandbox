@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+## Run Acquia BLT command.
+##
+## Usage: fin blt
+
+fin exec blt "$@"

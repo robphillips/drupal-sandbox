@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+## Run Yarn command.
+##
+## Usage: fin yarn
+
+fin exec yarn --cwd /var/www "$@"
