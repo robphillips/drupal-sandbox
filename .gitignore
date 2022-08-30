@@ -3,6 +3,7 @@ vendor
 node_modules
 yarn.lock
 yarn-error.log
+docksal-local.*
 /blt
 /web
 /.editorconfig
