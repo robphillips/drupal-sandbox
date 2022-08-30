@@ -21,7 +21,8 @@
         "drupal/core-composer-scaffold": "^10.0",
         "drupal/core-project-message": "^10.0",
         "drupal/core-recommended": "^10.0",
-        "slevomat/coding-standard": "^7.0"
+        "slevomat/coding-standard": "^7.0",
+        "wikimedia/composer-merge-plugin": "^2.0"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -36,11 +37,15 @@
             "phpstan/extension-installer": true,
             "dealerdirect/phpcodesniffer-composer-installer": true,
             "acquia/blt": true,
-            "acquia/blt-phpcs": true
+            "acquia/blt-phpcs": true,
+            "wikimedia/composer-merge-plugin": true
         },
         "sort-packages": true
     },
     "extra": {
+        "merge-plugin": {
+            "include": []
+        },
         "drupal-scaffold": {
             "locations": {
                 "web-root": "web/"
