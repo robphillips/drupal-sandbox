@@ -5,7 +5,7 @@ Provides a bare-bones Drupal sandbox with Acquia BLT+PHPCS and additional code t
 ## Getting Started
 
 ```shell
-git clone git@github.com:robphillips/drupal-sandbox.git 9.x
+git clone git@github.com:robphillips/drupal-sandbox.git
 ```
 
 ## Drupal Code Repository
@@ -14,14 +14,14 @@ git clone git@github.com:robphillips/drupal-sandbox.git 9.x
 fin run-clone [project] [git-url]
 ```
 
-## Code Validation
+## Code Validation & Builds
 
+```shell
+fin yarn startup
+```
 ```shell
 fin run-validate
 ```
-
-## Build Code
-
 ```shell
 fin run-build
 ```
