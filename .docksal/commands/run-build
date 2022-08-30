@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+## Run build tools.
+##
+## Usage: fin run-build
+
+for PWD in web/modules/drupalcode/*; do
+  if [ -d "$PWD" ]; then
+    for FILE in "$PWD"/js/*.es6.js; do
+      if [ -f "$FILE" ]; then yarn build:js --file "../../$FILE"; fi
+    done
+    for FILE in "$PWD"/css/*.pcss.css; do
+      if [ -f "$FILE" ]; then yarn build:css --file "../../$FILE"; fi
+    done
+  fi
+done

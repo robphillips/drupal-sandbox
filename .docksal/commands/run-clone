@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-## Clone project from Drupal Code repository.
+## Clone Drupal Code repository.
 ##
-## Usage: fin clone [project] [git-url]
+## Usage: fin run-clone [project] [git-url]
 
 DIR=web/modules/drupalcode/"$1"
 rm -rf "$DIR" && git clone "$2" "$DIR"

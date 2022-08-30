@@ -7,6 +7,8 @@
     "lint:js": "yarn --cwd web/core eslint -c .eslintrc.json --no-eslintrc --no-ignore --no-error-on-unmatched-pattern \"../modules/drupalcode/**/*.es6.js\"",
     "lint:css": "yarn --cwd web/core stylelint --allow-empty-input \"../modules/drupalcode/**/*.css\"",
     "lint:yaml": "yarn --cwd web/core eslint -c .eslintrc.json --no-eslintrc --ext .yml ../modules/drupalcode",
-    "spellcheck": "yarn --cwd web/core cspell --relative \"../modules/drupalcode/*\" \"../modules/drupalcode/**/*\""
+    "spellcheck": "yarn --cwd web/core cspell --relative \"../modules/drupalcode/*\" \"../modules/drupalcode/**/*\"",
+    "build:js": "yarn --cwd web/core build:js",
+    "build:css": "yarn --cwd web/core build:css"
   }
 }
