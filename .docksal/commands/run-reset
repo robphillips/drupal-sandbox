@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+## Reset or remove cloned repository.
+##
+## Usage: fin run-reset [project]
+
+rm -rf web/modules/drupalcode/"$1"
