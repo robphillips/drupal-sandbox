@@ -4,5 +4,6 @@
 ##
 ## Usage: fin run-clone [project] [git-url]
 
-DIR=web/modules/drupalcode/"$1"
-rm -rf "$DIR" && git clone "$2" "$DIR"
+fin drush pmu "$1" --no-interaction
+rm -rf web/modules/contrib/"$1" && rm -rf web/modules/drupalcode/"$1" && git clone "$2" web/modules/drupalcode/"$1"
+fin drush en "$1" --no-interaction

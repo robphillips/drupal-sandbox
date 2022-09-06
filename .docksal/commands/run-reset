@@ -4,4 +4,6 @@
 ##
 ## Usage: fin run-reset [project]
 
-rm -rf web/modules/drupalcode/"$1"
+fin drush pmu "$1" --no-interaction
+rm -rf web/modules/contrib/"$1" web/modules/drupalcode/"$1" && composer require drupal/"$1" --no-interaction
+fin drush en "$1" --no-interaction
