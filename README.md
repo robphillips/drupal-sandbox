@@ -16,6 +16,9 @@ fin drush site:install --db-url=mysql://user:user@db:3306/default -y
 ```shell
 fin run-clone [project] [git-url]
 ```
+```shell
+fin run-reset [project]
+```
 
 ## Code Validation & Builds
 
