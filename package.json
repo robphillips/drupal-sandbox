@@ -3,11 +3,10 @@
   "version": "1.0.0",
   "scripts": {
     "startup": "yarn install && yarn --cwd web/core install",
-    "lint": "yarn lint:js; yarn lint:css; yarn lint:yaml",
-    "lint:js": "yarn --cwd web/core eslint -c .eslintrc.json --no-eslintrc --no-ignore --no-error-on-unmatched-pattern \"../modules/drupalcode/**/*.es6.js\"",
-    "lint:css": "yarn --cwd web/core stylelint --allow-empty-input \"../modules/drupalcode/**/*.css\"",
-    "lint:yaml": "yarn --cwd web/core eslint -c .eslintrc.json --no-eslintrc --ext .yml ../modules/drupalcode",
-    "spellcheck": "yarn --cwd web/core cspell --relative \"../modules/drupalcode/*\" \"../modules/drupalcode/**/*\"",
+    "lint:js": "yarn --cwd web/core eslint -c .eslintrc.json --no-eslintrc --no-ignore --no-error-on-unmatched-pattern",
+    "lint:css": "yarn --cwd web/core stylelint --allow-empty-input",
+    "lint:yaml": "yarn --cwd web/core eslint -c .eslintrc.json --no-eslintrc --ext .yml",
+    "spellcheck": "yarn --cwd web/core cspell --relative \"../modules/contrib/$1/*\" \"../modules/contrib/$1/**/*\"",
     "build:js": "yarn --cwd web/core build:js",
     "build:css": "yarn --cwd web/core build:css"
   }

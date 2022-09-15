@@ -26,8 +26,8 @@ fin run-reset [project]
 fin yarn startup
 ```
 ```shell
-fin run-validate
+fin run-validate [project]
 ```
 ```shell
-fin run-build
+fin run-build [project]
 ```
