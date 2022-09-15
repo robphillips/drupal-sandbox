@@ -2,6 +2,9 @@
 
 ## Run validation tools.
 ##
-## Usage: fin run-validate
+## Usage: fin run-validate [project]
 
-fin blt validate:phpcs; fin yarn lint; fin yarn spellcheck
+fin yarn lint:js "../modules/contrib/$1/**/*.es6.js"
+fin yarn lint:css "../modules/contrib/$1/**/*.css"
+fin yarn lint:yaml "../modules/contrib/$1"
+fin blt validate:phpcs
