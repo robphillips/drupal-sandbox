@@ -6,7 +6,6 @@
     "lint:js": "yarn --cwd web/core eslint -c .eslintrc.json --no-eslintrc --no-ignore --no-error-on-unmatched-pattern",
     "lint:css": "yarn --cwd web/core stylelint --allow-empty-input",
     "lint:yaml": "yarn --cwd web/core eslint -c .eslintrc.json --no-eslintrc --ext .yml",
-    "spellcheck": "yarn --cwd web/core cspell --relative \"../modules/contrib/$1/*\" \"../modules/contrib/$1/**/*\"",
     "build:js": "yarn --cwd web/core build:js",
     "build:css": "yarn --cwd web/core build:css"
   }
