@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-## Clone Drupal Code repository.
+## Clone Drupal repository.
 ##
 ## Usage: fin run-clone [project] [git-url]
 

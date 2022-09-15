@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-## Run validation tools.
+## Validate modules.
 ##
 ## Usage: fin run-validate [project]
 

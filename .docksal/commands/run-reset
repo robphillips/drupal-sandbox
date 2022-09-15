@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-## Reset or remove cloned repository.
+## Reset Drupal repository.
 ##
 ## Usage: fin run-reset [project]
 

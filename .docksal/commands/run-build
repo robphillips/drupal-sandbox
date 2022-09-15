@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-## Run build tools.
+## Build modules assets.
 ##
 ## Usage: fin run-build [project]
 
