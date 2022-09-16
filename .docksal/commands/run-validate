@@ -4,7 +4,7 @@
 ##
 ## Usage: fin run-validate [project]
 
-fin yarn lint:js "../modules/contrib/$1/**/*.es6.js"
-fin yarn lint:css "../modules/contrib/$1/**/*.css"
-fin yarn lint:yaml "../modules/contrib/$1"
+fin yarn lint:js "../modules/contrib/$1/**/*.es6.js" --fix
+fin yarn lint:css "../modules/contrib/$1/**/*.css" --fix
+fin yarn lint:yaml "../modules/contrib/$1" --fix
 fin blt validate:phpcs
