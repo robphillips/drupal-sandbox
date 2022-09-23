@@ -20,6 +20,7 @@
   <file>web/modules/contrib/comment_delete</file>
   <file>web/modules/contrib/current_user_condition</file>
   <file>web/modules/contrib/dynamic_tasks</file>
+  <file>web/modules/contrib/dynamic_path_aliases</file>
   <file>web/modules/contrib/entity_confirmation</file>
   <file>web/modules/contrib/entity_form_steps</file>
   <file>web/modules/contrib/entity_label</file>
