@@ -29,6 +29,7 @@
   <file>web/modules/contrib/media_abstract</file>
   <file>web/modules/contrib/require_login</file>
   <file>web/modules/contrib/target_attributes_filter</file>
+  <file>web/modules/contrib/node_preview_permissions</file>
 
   <exclude-pattern>*/behat</exclude-pattern>
   <exclude-pattern>*/node_modules</exclude-pattern>
