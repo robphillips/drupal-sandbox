@@ -1,16 +1,16 @@
 #!/usr/bin/env bash
 
-## Build modules assets.
+## Build module assets.
 ##
-## Usage: fin run-build [project]
+## Usage: fin run-build [module]
 
 for PWD in web/modules/contrib/$1; do
   if [ -d "$PWD" ]; then
     for FILE in "$PWD"/js/*.es6.js; do
-      if [ -f "$FILE" ]; then yarn build:js --file "../../$FILE"; fi
+      if [ -f "$FILE" ]; then fin yarn build:js --file "../../$FILE"; fi
     done
     for FILE in "$PWD"/css/*.pcss.css; do
-      if [ -f "$FILE" ]; then yarn build:css --file "../../$FILE"; fi
+      if [ -f "$FILE" ]; then fin yarn build:css --file "../../$FILE"; fi
     done
   fi
 done

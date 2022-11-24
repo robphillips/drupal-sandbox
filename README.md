@@ -26,7 +26,10 @@ fin run-reset [project]
 fin yarn startup
 ```
 ```shell
-fin run-validate [project]
+fin blt validate:phpcs
+```
+```shell
+fin run-lint [project]
 ```
 ```shell
 fin run-build [project]
