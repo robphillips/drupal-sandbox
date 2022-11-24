@@ -1,0 +1,20 @@
+{
+  "extends": ["./web/core/.eslintrc.json"],
+  "root": true,
+  "rules": {
+    "max-nested-callbacks": ["error", 5],
+    "multiline-comment-style": ["error", "separate-lines"],
+    "no-inline-comments": ["error"],
+    "no-alert": "off",
+    "no-unused-vars": [
+      "error",
+      {
+        "vars": "local",
+        "args": "after-used",
+        "ignoreRestSiblings": true
+      }
+    ],
+    "no-undef": "off",
+    "func-names": ["off"]
+  }
+}

@@ -1,10 +1,9 @@
 #!/usr/bin/env bash
 
-## Validate modules.
+## Lint module code.
 ##
-## Usage: fin run-validate [project]
+## Usage: fin run-lint [module]
 
+fin yarn lint:yaml "../modules/contrib/$1" --fix
 fin yarn lint:js "../modules/contrib/$1/**/*.es6.js" --fix
 fin yarn lint:css "../modules/contrib/$1/**/*.css" --fix
-fin yarn lint:yaml "../modules/contrib/$1" --fix
-fin blt validate:phpcs

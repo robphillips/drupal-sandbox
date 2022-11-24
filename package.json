@@ -8,5 +8,18 @@
     "lint:yaml": "yarn --cwd web/core eslint -c .eslintrc.json --no-eslintrc --ext .yml",
     "build:js": "yarn --cwd web/core build:js",
     "build:css": "yarn --cwd web/core build:css"
+  },
+  "dependencies": {
+    "eslint": "^7.0.0",
+    "eslint-config-airbnb": "^18.0.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-import": "^2.0.0",
+    "eslint-plugin-jquery": "^1.0.0",
+    "eslint-plugin-jsx-a11y": "^6.0.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-react": "^7.0.0",
+    "eslint-plugin-react-hooks": "^4.0.0",
+    "eslint-plugin-yml": "^0.10.0",
+    "prettier": "^2.0.0"
   }
 }
